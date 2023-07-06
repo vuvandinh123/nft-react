@@ -1,0 +1,24 @@
+@import './scss/Resetcss.scss';
+@import './scss/Golobal.scss';
+@import './components/Cart/Cart.scss';
+@import './components/CartList/CartList.scss';
+@import './components/Footer/Footer.scss';
+@import './components/Header/Header.scss';
+@import './components/Home/Brand.scss';
+@import './components/Home/Category.scss';
+@import './components/Home/Content.scss';
+@import './components/Home/Title.scss';
+@import './components/Product/Product.scss';
+@import './components/ProductList/ProductList.scss';
+@import './page/Frontend/Home/Home.scss';
+@import './page/Frontend/Cart/Cart.scss';
+@import './page/Frontend/Login/Login.scss';
+@import './page/Frontend/ProductDetail/ProductDetail.scss';
+@import './page/Frontend/Products/Product.scss';
+@import './page/Frontend/Order/Order.scss';
+.bg-admin{
+    background: url(https://images.unsplash.com/photo-1603549619729-d6f60ded1a6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+}

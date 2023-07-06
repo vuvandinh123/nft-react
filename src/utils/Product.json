@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "name": "LuppyclubOfficial #23211",
+      "created":"LuppyclubOfficial",
+      "price": 11.18,
+      "image": "card1.png"
+    },
+    {
+      "id": 2,
+      "name": "MutantApeYachtClub #12311",
+      "created":"0xa858d...2ef1",
+      "price": 206.09,
+      "image": "card2.png"
+    },
+    {
+      "id": 3,
+      "name": "Monomyth By Heart You #21711",
+      "created":"vudinh9911",
+      "price": 35.130,
+      "image": "card3.png"
+    },
+    {
+      "id": 4,
+      "name": "JUNKeeeeS ORIGINALS #21710",
+      "price": 5090.13,
+      "created":"0xa811...2ef1",
+      "image": "card4.png"
+    },
+    {
+      "id": 5,
+      "name": "SuperRare #21751",
+      "created":"tranddd201",
+      "price": 190.001,
+      "image": "card5.png"
+    },
+    {
+      "id": 6,
+      "name": "MutantApeYachtClub #21752",
+      "created":"helooWord119",
+      "price": 90.0000,
+      "image": "card6.png"
+    }
+]

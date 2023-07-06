@@ -1,0 +1,161 @@
+@import '../../scss/Golobal.scss';
+
+.list-cards {
+    // position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+    margin-top: 50px;
+    &::before{
+      content: '';
+      display: block;
+      @include brud(rgb(255, 208, 0),-100px ,50% );
+    }
+    &::after{
+      content: '';
+      display: block;
+      @include brud(rgb(162, 0, 255),80% ,80% );
+      z-index:-1;
+    }
+    .card {
+      position: relative;
+      background-color: var(--card);
+      padding: 20px;
+      color: #fff;
+      border-radius: 10px;
+      height: 600px;
+      max-height: 582px;
+      cursor: pointer;
+      .card-heart{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        width: 30px;
+        height:30px;
+        border-radius: 50%;
+        background-color: #fff;
+        @include flex-center('center');
+        img{
+          width: 50%;
+          transition: .3s;
+        }
+        &:hover img{
+          transform: scale(1.2);
+        }
+      }
+      .card-image {
+        margin-bottom: 20px;
+        height: 400px;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: .4s;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          max-height: 400px;
+        }
+      }
+      .card-content {
+        .card-title {
+          font-size: 2rem;
+          font-weight: bold;
+          color: var(--color-text);
+          margin: 15px 0;
+        }
+        .card-outher{
+          color: $gray;
+          font-size: 1.5rem;
+          margin: 15px 0;
+          span{
+            color: $primary;
+            cursor: pointer;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+        .card-bottom{
+          margin-top: 30px;
+          @include flex-center('between');
+          .price{
+            color: $gray;
+            
+            h4{
+              margin: 5px 0;
+              color: var(--color-text);
+            }
+          }
+          .card-time{
+            color: $gray;
+            h5{
+              text-align: center;
+              margin: 5px 0;
+              color: var(--color-text);
+            }
+          }
+        }
+      }
+      .product-cart{
+        position: absolute;
+        right: 30px;
+        top: 80px;
+        width: 30px;
+        height:30px;
+        @include flex-center('center');
+        border-radius: 50%;
+        color: red  ;
+        background-color: #ffffffe5;
+      }
+      .card-btn{
+        opacity: 0;
+        // position: absolute;
+        height: 0;
+        visibility: hidden;
+        margin-top: 20px;
+        transition: .5s;
+        left: 0;
+        right: 0;
+        a{
+          display: block;
+          width: 100%;
+          height: 40px;
+          border-radius: 10px;
+          background-color: $primary;
+          color: #fff;
+          line-height: 40px;
+          text-align: center;
+          transition: .2s;
+          position: relative;
+          overflow: hidden;
+          @include buttom();
+        }
+      }
+      &:hover .card-image{
+        height: 340px;
+      }
+      &:hover .card-btn{
+        opacity: 1;
+        height: 50px;
+        visibility: initial;
+      }
+    }
+    
+  }
+  .card-more{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    .more{
+      color: #fff;
+    padding: 15px 25px;
+    background-color: #1e50ff;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    @include buttom()
+    }
+
+  }

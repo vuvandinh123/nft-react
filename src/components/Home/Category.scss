@@ -1,0 +1,123 @@
+@import '../../scss/Golobal.scss';
+
+
+.category-home {
+    .brub {
+      position: relative;
+      .brub-item:nth-child(1) {
+        @include brud(#6600ff, 200px, 80%);
+        z-index: -1;
+      }
+      .brub-item:nth-child(2) {
+        @include brud(#ee00ff, 0px, 80%);
+        z-index: -1;
+      }
+      .brub-item:nth-child(3) {
+        @include brud(#ff0000, 500px, -500px);
+        z-index: -1;
+      }
+    }
+    .category-header {
+      @include flex-center("between");
+      flex-wrap: wrap;
+      margin: 20px 0;
+      color: var(--color-text);
+      h3 {
+        font-size: 3.5rem;
+      }
+      .arow {
+        button {
+          color: var(--color-text);
+          font-size: 2rem;
+          width: 40px;
+          height: 40px;
+          background-color: #192243;
+          border-radius: 5px;
+          transition: 0.3s;
+          &:hover {
+            background-color: #1e50ff;
+          }
+        }
+      }
+    }
+    .category-content {
+      overflow: auto;
+      max-width: 100%;
+      scroll-behavior: smooth;
+      scroll-snap-type: both;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .category-list-card {
+        display: flex;
+        width: max-content;
+  
+        .category-card-item {
+          width: 270px;
+          background-color: var(--card);
+          border-radius: 10px;
+          padding: 10px;
+          margin: 10px;
+          scroll-snap-align: start;
+          cursor: pointer;
+          &:first-child {
+            margin-left: 0;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+          &:hover .category-item-footer a {
+            background-color: #1e50ff;
+          }
+        }
+        @include media(1200px) {
+          .category-card-item {
+            width: calc(33.3vw - 30px);
+          }
+        }
+        @include media(1028px) {
+          .category-card-item {
+            width: calc(33.3vw - 30px);
+          }
+        }
+        @include media(768px) {
+          .category-card-item {
+            width: calc(50vw - 30px);
+          }
+        }
+        @include media(600px) {
+          .category-card-item {
+            width: calc(100vw - 40px);
+          }
+        }
+        .image {
+          margin-bottom: 15px;
+          overflow: hidden;
+          border-radius: 10px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.3s;
+          }
+          &:hover img {
+            transform: scale(1.1);
+          }
+        }
+        .category-item-footer {
+          font-weight: bold;
+          font-size: 1.4rem;
+          a {
+            color: #fff;
+            padding: 10px 20px;
+            background-color: #192243;
+            border-radius: 10px;
+            width: 100%;
+            display: block;
+            text-align: center;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+  }

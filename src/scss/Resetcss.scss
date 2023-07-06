@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Pacifico&family=Paytone+One&family=Poppins:wght@200;300;400;500;600;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  // min-height: 100vh;
+  font-weight: 400;
+  font-size: 1.6rem;
+  font-family: "Space Grotesk", sans-serif;
+  line-height: 1;
+  background-color: #ffffff;
+  position: relative;
+  // scroll-behavior: smooth;
+  height: max-content;
+  
+}
+body.darkmod {
+  background-color: #020005;
+  --color-text: #fff;
+  $primary: #1e50ff;
+  $gray: gray;
+  $dark: #131528;
+  --border: 1px solid rgb(251 251 251 / 20%);
+  --card: #131528;
+  --sticky: #131528;
+  --mb: #363030;
+}
+
+.color-red {
+  color: rgb(255, 149, 0);
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+
+.blur {
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  .blur-item {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    filter: blur(165px);
+    border-radius: 50%;
+  }
+  .blur-item:nth-child(1) {
+    background: #aa00ff;
+    left: 0;
+    top: 0;
+  }
+  .blur-item:nth-child(2) {
+    right: -100px;
+    top: 300px;
+    background: #ffc935;
+  }
+  .blur-item:nth-child(3) {
+    left: 0px;
+    top: 500px;
+    background: #1e50ff;
+  }
+  .blur-item:nth-child(4) {
+    left: 80%;
+    top: 90%;
+    background: #aa00ff;
+  }
+  .blur-item:nth-child(5) {
+    left: 50%;
+    top: 150px;
+    background: #aa00ff;
+  }
+  .blur-item:nth-child(6) {
+    left: 50%;
+    width: 150px;
+    top: 600px;
+    background: #ffc935;
+  }
+}
